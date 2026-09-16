@@ -604,6 +604,7 @@ Sync_buffer.srcs
 │
 ├── Sim_1/New
 │   ├── fifo_W2R1_tb.sv
+|   ├── fifo_stack_tb.sv
 │   ├── fifo_w1r1_tb.sv
 │   └── main_test_tb.sv
 │
