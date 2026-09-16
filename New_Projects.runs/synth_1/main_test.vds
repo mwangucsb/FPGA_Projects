@@ -1,0 +1,433 @@
+INFO: [Common 17-3922] A valid Vivado Design Suite BASIC license has been detected. Your current license is active and will expire on 12-aug-2027.
+#-----------------------------------------------------------
+# Vivado v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Mon Sep 14 21:50:27 2026
+# Process ID         : 23296
+# Current directory  : C:/Users/maxzw/New_Projects/New_Projects.runs/synth_1
+# Command line       : vivado.exe -log main_test.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source main_test.tcl
+# Log file           : C:/Users/maxzw/New_Projects/New_Projects.runs/synth_1/main_test.vds
+# Journal file       : C:/Users/maxzw/New_Projects/New_Projects.runs/synth_1\vivado.jou
+# Running On         : U8JGQU6O40HO7
+# Platform           : Windows 11
+# Operating System   : 26200
+# Processor Detail   : Intel(R) Core(TM) 5 120U
+# CPU Frequency      : 2496 MHz
+# CPU Physical cores : 10
+# CPU Logical cores  : 12
+# Host memory        : 16858 MB
+# Swap memory        : 20401 MB
+# Total Virtual      : 37259 MB
+# Available Virtual  : 17626 MB
+#-----------------------------------------------------------
+source main_test.tcl -notrace
+create_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 582.137 ; gain = 266.406
+Command: synth_design -top main_test -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Vivado_Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Vivado_Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Designutils 20-5008] Incremental synthesis strategy default
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 17804
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1365.180 ; gain = 578.777
+---------------------------------------------------------------------------------
+INFO: [Synth 8-11241] undeclared symbol 'full', assumed default net type 'wire' [C:/Users/maxzw/New_Projects/New_Projects.srcs/sources_1/new/main_test.sv:372]
+INFO: [Synth 8-11241] undeclared symbol 'empty', assumed default net type 'wire' [C:/Users/maxzw/New_Projects/New_Projects.srcs/sources_1/new/main_test.sv:373]
+INFO: [Synth 8-6157] synthesizing module 'main_test' [C:/Users/maxzw/New_Projects/New_Projects.srcs/sources_1/new/main_test.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'db_fsm' [C:/Users/maxzw/New_Projects/New_Projects.srcs/sources_1/new/db_fsm.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'db_fsm' (0#1) [C:/Users/maxzw/New_Projects/New_Projects.srcs/sources_1/new/db_fsm.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'Rising_Edge_Detector' [C:/Users/maxzw/New_Projects/New_Projects.srcs/sources_1/new/Rising_Edge_Detector.sv:4]
+INFO: [Synth 8-6155] done synthesizing module 'Rising_Edge_Detector' (0#1) [C:/Users/maxzw/New_Projects/New_Projects.srcs/sources_1/new/Rising_Edge_Detector.sv:4]
+INFO: [Synth 8-6157] synthesizing module 'sync_buff_w1r1' [C:/Users/maxzw/New_Projects/New_Projects.srcs/sources_1/new/sync_buff_w1r1.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'fifo_w1r1' [C:/Users/maxzw/New_Projects/New_Projects.srcs/sources_1/new/fifo_w1r1.sv:3]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH bound to: 3 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'fifo_controller_w1r1' [C:/Users/maxzw/New_Projects/New_Projects.srcs/sources_1/new/fifo_controller_w1r1.sv:3]
+	Parameter ADDR_WIDTH bound to: 3 - type: integer 
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/maxzw/New_Projects/New_Projects.srcs/sources_1/new/fifo_controller_w1r1.sv:49]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_controller_w1r1' (0#1) [C:/Users/maxzw/New_Projects/New_Projects.srcs/sources_1/new/fifo_controller_w1r1.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'reg_file_w1r1' [C:/Users/maxzw/New_Projects/New_Projects.srcs/sources_1/new/reg_file_w1r1.sv:3]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'reg_file_w1r1' (0#1) [C:/Users/maxzw/New_Projects/New_Projects.srcs/sources_1/new/reg_file_w1r1.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_w1r1' (0#1) [C:/Users/maxzw/New_Projects/New_Projects.srcs/sources_1/new/fifo_w1r1.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'bin2bcd' [C:/Users/maxzw/New_Projects/New_Projects.srcs/sources_1/new/bin2bcd.sv:3]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/maxzw/New_Projects/New_Projects.srcs/sources_1/new/bin2bcd.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bin2bcd' (0#1) [C:/Users/maxzw/New_Projects/New_Projects.srcs/sources_1/new/bin2bcd.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'disp_hex_mux' [C:/Users/maxzw/New_Projects/New_Projects.srcs/sources_1/new/disp_hex_mux.sv:3]
+INFO: [Synth 8-226] default block is never used [C:/Users/maxzw/New_Projects/New_Projects.srcs/sources_1/new/disp_hex_mux.sv:83]
+INFO: [Synth 8-6155] done synthesizing module 'disp_hex_mux' (0#1) [C:/Users/maxzw/New_Projects/New_Projects.srcs/sources_1/new/disp_hex_mux.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'sync_buff_w1r1' (0#1) [C:/Users/maxzw/New_Projects/New_Projects.srcs/sources_1/new/sync_buff_w1r1.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'sync_buff_w2r1' [C:/Users/maxzw/New_Projects/New_Projects.srcs/sources_1/new/sync_buff_w2r1.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'fifow2r1' [C:/Users/maxzw/New_Projects/New_Projects.srcs/sources_1/new/fifow2r1.sv:4]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH bound to: 3 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'fifo_controller_W2R1' [C:/Users/maxzw/New_Projects/New_Projects.srcs/sources_1/new/fifo_controller_W2R1.sv:3]
+	Parameter ADDR_WIDTH bound to: 3 - type: integer 
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Users/maxzw/New_Projects/New_Projects.srcs/sources_1/new/fifo_controller_W2R1.sv:44]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_controller_W2R1' (0#1) [C:/Users/maxzw/New_Projects/New_Projects.srcs/sources_1/new/fifo_controller_W2R1.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'reg_filew2r1' [C:/Users/maxzw/New_Projects/New_Projects.srcs/sources_1/new/reg_filew2r1.sv:3]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'reg_filew2r1' (0#1) [C:/Users/maxzw/New_Projects/New_Projects.srcs/sources_1/new/reg_filew2r1.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'fifow2r1' (0#1) [C:/Users/maxzw/New_Projects/New_Projects.srcs/sources_1/new/fifow2r1.sv:4]
+INFO: [Synth 8-6155] done synthesizing module 'sync_buff_w2r1' (0#1) [C:/Users/maxzw/New_Projects/New_Projects.srcs/sources_1/new/sync_buff_w2r1.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'sync_buff_stack' [C:/Users/maxzw/New_Projects/New_Projects.srcs/sources_1/new/sync_buff_stack.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'fifo_stack' [C:/Users/maxzw/New_Projects/New_Projects.srcs/sources_1/new/fifo_stack.sv:3]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH bound to: 3 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'stack_ctrl' [C:/Users/maxzw/New_Projects/New_Projects.srcs/sources_1/new/stack_ctrl.sv:3]
+	Parameter ADDR_WIDTH bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'stack_ctrl' (0#1) [C:/Users/maxzw/New_Projects/New_Projects.srcs/sources_1/new/stack_ctrl.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'stack_reg_file' [C:/Users/maxzw/New_Projects/New_Projects.srcs/sources_1/new/stack_reg_file.sv:3]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'stack_reg_file' (0#1) [C:/Users/maxzw/New_Projects/New_Projects.srcs/sources_1/new/stack_reg_file.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'fifo_stack' (0#1) [C:/Users/maxzw/New_Projects/New_Projects.srcs/sources_1/new/fifo_stack.sv:3]
+WARNING: [Synth 8-7071] port 'empty' of module 'disp_hex_mux' is unconnected for instance 'u_disp' [C:/Users/maxzw/New_Projects/New_Projects.srcs/sources_1/new/sync_buff_stack.sv:207]
+WARNING: [Synth 8-7023] instance 'u_disp' of module 'disp_hex_mux' has 13 connections declared, but only 12 given [C:/Users/maxzw/New_Projects/New_Projects.srcs/sources_1/new/sync_buff_stack.sv:207]
+INFO: [Synth 8-6155] done synthesizing module 'sync_buff_stack' (0#1) [C:/Users/maxzw/New_Projects/New_Projects.srcs/sources_1/new/sync_buff_stack.sv:3]
+INFO: [Synth 8-6155] done synthesizing module 'main_test' (0#1) [C:/Users/maxzw/New_Projects/New_Projects.srcs/sources_1/new/main_test.sv:3]
+WARNING: [Synth 8-4767] Trying to implement RAM 'array_reg_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons. [C:/Users/maxzw/New_Projects/New_Projects.srcs/sources_1/new/reg_filew2r1.sv:29]
+Reason is one or more of the following :
+	1: RAM has multiple writes via different ports in same process. If RAM inferencing intended, write to one port per process. 
+	2: Invalid write to RAM. 
+	3: No valid clock found for write to RAM. 
+WARNING: [Synth 8-3848] Net full in module/entity main_test does not have driver. [C:/Users/maxzw/New_Projects/New_Projects.srcs/sources_1/new/main_test.sv:372]
+WARNING: [Synth 8-3848] Net empty in module/entity main_test does not have driver. [C:/Users/maxzw/New_Projects/New_Projects.srcs/sources_1/new/main_test.sv:373]
+WARNING: [Synth 8-7129] Port sw[15] in module sync_buff_stack is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[14] in module sync_buff_stack is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[13] in module sync_buff_stack is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[12] in module sync_buff_stack is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[11] in module sync_buff_stack is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[10] in module sync_buff_stack is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[9] in module sync_buff_stack is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[8] in module sync_buff_stack is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[15] in module sync_buff_w1r1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[14] in module sync_buff_w1r1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[13] in module sync_buff_w1r1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[12] in module sync_buff_w1r1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[11] in module sync_buff_w1r1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[10] in module sync_buff_w1r1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[9] in module sync_buff_w1r1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[8] in module sync_buff_w1r1 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1490.875 ; gain = 704.473
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1490.875 ; gain = 704.473
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1490.875 ; gain = 704.473
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1490.875 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/maxzw/New_Projects/New_Projects.srcs/constrs_1/new/constraints.xdc]
+Finished Parsing XDC File [C:/Users/maxzw/New_Projects/New_Projects.srcs/constrs_1/new/constraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/maxzw/New_Projects/New_Projects.srcs/constrs_1/new/constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/main_test_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/main_test_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1559.910 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1561.742 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1561.742 ; gain = 775.340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1561.742 ; gain = 775.340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1561.742 ; gain = 775.340
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg_reg' in module 'db_fsm'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'Rising_Edge_Detector'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg_reg' in module 'bin2bcd'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'main_test'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    zero |                              000 | 00000000000000000000000000000000
+                 wait1_1 |                              001 | 00000000000000000000000000000001
+                 wait1_2 |                              010 | 00000000000000000000000000000010
+                 wait1_3 |                              011 | 00000000000000000000000000000011
+                     one |                              100 | 00000000000000000000000000000100
+                 wait0_1 |                              101 | 00000000000000000000000000000101
+                 wait0_2 |                              110 | 00000000000000000000000000000110
+                 wait0_3 |                              111 | 00000000000000000000000000000111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg_reg' using encoding 'sequential' in module 'db_fsm'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                     LOW |                               00 |                               00
+                  RISING |                               01 |                               01
+                    HIGH |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'Rising_Edge_Detector'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                              001 | 00000000000000000000000000000000
+                      op |                              010 | 00000000000000000000000000000001
+                    done |                              100 | 00000000000000000000000000000010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg_reg' using encoding 'one-hot' in module 'bin2bcd'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                              000 |                              000
+                  STATE1 |                              101 |                              001
+            SYNC_BUFFER1 |                              011 |                              100
+                  STATE2 |                              110 |                              010
+            SYNC_BUFFER2 |                              010 |                              101
+                  STATE3 |                              100 |                              011
+            STACK_BUFFER |                              001 |                              110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'main_test'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1561.742 ; gain = 775.340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    4 Bit       Adders := 18    
+	   2 Input    3 Bit       Adders := 9     
++---Registers : 
+	                8 Bit    Registers := 17    
+	                4 Bit    Registers := 18    
+	                3 Bit    Registers := 5     
+	                1 Bit    Registers := 6     
++---RAMs : 
+	               64 Bit	(8 X 8 bit)          RAMs := 2     
++---Muxes : 
+	   3 Input    8 Bit        Muxes := 3     
+	   4 Input    8 Bit        Muxes := 6     
+	   2 Input    8 Bit        Muxes := 11    
+	   4 Input    4 Bit        Muxes := 3     
+	   2 Input    4 Bit        Muxes := 30    
+	   3 Input    4 Bit        Muxes := 15    
+	   8 Input    3 Bit        Muxes := 9     
+	   2 Input    3 Bit        Muxes := 60    
+	   7 Input    3 Bit        Muxes := 1     
+	   3 Input    2 Bit        Muxes := 9     
+	   2 Input    2 Bit        Muxes := 28    
+	   4 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 35    
+	   8 Input    1 Bit        Muxes := 9     
+	   4 Input    1 Bit        Muxes := 6     
+	   3 Input    1 Bit        Muxes := 14    
+	   7 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7129] Port sw[15] in module sync_buff_stack is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[14] in module sync_buff_stack is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[13] in module sync_buff_stack is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[12] in module sync_buff_stack is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[11] in module sync_buff_stack is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[10] in module sync_buff_stack is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[9] in module sync_buff_stack is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[8] in module sync_buff_stack is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[15] in module sync_buff_w1r1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[14] in module sync_buff_w1r1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[13] in module sync_buff_w1r1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[12] in module sync_buff_w1r1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[11] in module sync_buff_w1r1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[10] in module sync_buff_w1r1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[9] in module sync_buff_w1r1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[8] in module sync_buff_w1r1 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1612.680 ; gain = 826.277
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++------------+-------------------------------------------+-----------+----------------------+---------------+
+|Module Name | RTL Object                                | Inference | Size (Depth x Width) | Primitives    | 
++------------+-------------------------------------------+-----------+----------------------+---------------+
+|main_test   | u_sync_buffer1/fifo/memory/mem_reg        | Implied   | 8 x 8                | RAM32M x 2    | 
+|main_test   | u_stack_buffer/stack/f_unit/array_reg_reg | Implied   | 8 x 8                | RAM16X1S x 8  | 
++------------+-------------------------------------------+-----------+----------------------+---------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 1724.387 ; gain = 937.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 1811.359 ; gain = 1024.957
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++------------+-------------------------------------------+-----------+----------------------+---------------+
+|Module Name | RTL Object                                | Inference | Size (Depth x Width) | Primitives    | 
++------------+-------------------------------------------+-----------+----------------------+---------------+
+|main_test   | u_sync_buffer1/fifo/memory/mem_reg        | Implied   | 8 x 8                | RAM32M x 2    | 
+|main_test   | u_stack_buffer/stack/f_unit/array_reg_reg | Implied   | 8 x 8                | RAM16X1S x 8  | 
++------------+-------------------------------------------+-----------+----------------------+---------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 1811.359 ; gain = 1024.957
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 2017.262 ; gain = 1230.859
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 2017.262 ; gain = 1230.859
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 2017.262 ; gain = 1230.859
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 2017.262 ; gain = 1230.859
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 2017.262 ; gain = 1230.859
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 2017.262 ; gain = 1230.859
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |CARRY4   |    50|
+|3     |LUT1     |    14|
+|4     |LUT2     |    70|
+|5     |LUT3     |    55|
+|6     |LUT4     |    48|
+|7     |LUT5     |   103|
+|8     |LUT6     |   143|
+|9     |MUXF7    |     8|
+|10    |RAM16X1S |     8|
+|11    |RAM32M   |     1|
+|12    |RAM32X1D |     2|
+|13    |FDCE     |   273|
+|14    |FDRE     |   200|
+|15    |FDSE     |     3|
+|16    |IBUF     |    23|
+|17    |OBUF     |    16|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 2017.262 ; gain = 1230.859
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 16 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:24 ; elapsed = 00:00:32 . Memory (MB): peak = 2017.262 ; gain = 1159.992
+Synthesis Optimization Complete : Time (s): cpu = 00:00:32 ; elapsed = 00:00:35 . Memory (MB): peak = 2017.262 ; gain = 1230.859
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2026.488 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 69 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2030.164 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 11 instances were transformed.
+  RAM16X1S => RAM32X1S (RAMS32): 8 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 1 instance 
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 2 instances
+
+Synth Design complete | Checksum: 5feae365
+INFO: [Common 17-83] Releasing license: Vivado_Synthesis
+64 Infos, 37 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:41 . Memory (MB): peak = 2030.164 ; gain = 1448.027
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 2030.164 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/maxzw/New_Projects/New_Projects.runs/synth_1/main_test.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file main_test_utilization_synth.rpt -pb main_test_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Sep 14 21:51:18 2026...
