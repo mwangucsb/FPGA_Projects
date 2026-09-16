@@ -178,6 +178,63 @@ These components are combined by the top-level FIFO module.
                          Read Data
 ```
 
+### Memory Organization
+
+The FIFO uses a memory structure consisting of **8 memory locations**, with each location storing **8 bits of data**.
+
+```text
+                8 × 8-bit Memory
+
+        Address        Data
+       ┌────────┬────────────┐
+       │   0    │  8 bits    │
+       ├────────┼────────────┤
+       │   1    │  8 bits    │
+       ├────────┼────────────┤
+       │   2    │  8 bits    │
+       ├────────┼────────────┤
+       │   3    │  8 bits    │
+       ├────────┼────────────┤
+       │   4    │  8 bits    │
+       ├────────┼────────────┤
+       │   5    │  8 bits    │
+       ├────────┼────────────┤
+       │   6    │  8 bits    │
+       ├────────┼────────────┤
+       │   7    │  8 bits    │
+       └────────┴────────────┘
+
+       Total Capacity = 8 × 8 = 64 bits
+```
+
+Each memory location stores one **8-bit data word**, giving the FIFO a total storage capacity of **64 bits**.
+
+The FIFO controller uses **3-bit read and write addresses** to select one of the eight memory locations. As the FIFO operates, the read and write pointers advance through the memory locations and wrap around when they reach the end of the buffer.
+
+The occupancy counter tracks how many of the eight available memory locations currently contain valid FIFO entries.
+
+For example:
+
+```text
+Empty FIFO:
+
+[  ][  ][  ][  ][  ][  ][  ][  ]
+ ↑
+Read/Write Pointer
+
+
+After writing 3 values:
+
+[ A ][ B ][ C ][  ][  ][  ][  ][  ]
+  ↑    ↑    ↑
+ 0    1    2
+
+Occupancy = 3 / 8
+```
+
+This organization separates the **control logic** from the **storage**: the FIFO controller manages addresses and occupancy, while the register file provides the eight 8-bit memory locations.
+
+
 ### FIFO Controller
 
 The **FIFO controller** is responsible for managing the state of the FIFO.
